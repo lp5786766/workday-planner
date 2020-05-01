@@ -1,3 +1,7 @@
-/* * {
-    background: green;
-} */
+* {
+    border: 1px solid black;
+}
+p {
+    display: inline;
+    margin: 10px;
+}

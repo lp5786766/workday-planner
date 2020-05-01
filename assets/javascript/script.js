@@ -1,4 +1,11 @@
-// When I open the page, today's date is displayed (Moment.js library).
+// When I open the page, today's date and time is displayed (Moment.js library).
+console.log(moment());
+var moment = moment().format('MMMM Do YYYY, h:mm:ss a');
+$("#moment").text(moment);
+
+
+// Also date and time in your hometown in displayed.
+
 // Below I see 9 blocks of 1 hour each (9:00 am - 5:00 pm);
     // This should be covered in the HTML file.
         // time---task-field---task---saveBtn
