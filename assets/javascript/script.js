@@ -1,4 +1,4 @@
-// When I open the page, today's date is displayed (Moment.js library).
+// When I open the page, today's date is displayed
 
 var momentDay = moment().format("MMMM Do YYYY");
 $("#moment").text(momentDay);
@@ -77,19 +77,15 @@ allTasks.forEach(function (task) {
 
   // if it's a current event
   if (taskID === momentTime) {
-    task.css("background-color", "rgb(255, 70, 70)");
+    task.css("background-color", "rgb(87, 199, 133)");
+    // if it's a past event
+  } else if (taskID < momentTime) {
+    task.css("background-color", "rgb(185, 192, 184)");
+    // if it's a future event
+  } else {
+    task.css("background-color", "rgb(237, 221, 83)");
   }
 });
-
-//
-
-// var element = taskEl;
-// var idStr = element.id;
-// var taskTime = $("input").id;
-// var taskId = taskTime.id;
-
-// if
-// if the index is less than time then color...
 
 // Questions/Suggestions:
 // Would the tasks be deleted the next day and you are presented with a blank day?
