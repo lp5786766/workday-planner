@@ -14,7 +14,10 @@ h2 {
 .task {
   height: 75px;
 }
-/* background-color: rgb(245, 170, 170); */
+
+.past-task {
+  background-color: rgb(255, 70, 70);
+}
 .save {
   background-color: rgb(167, 207, 167);
 }
