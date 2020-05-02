@@ -57,10 +57,9 @@ $(".5").val(savedTask5);
 
 // 3. Each block is colored respective of time (past, current, future event);
 
-// var momentTime = moment().format("h");
-// console.log(momentTime);
-var momentTime = 11;
+var momentTime = moment().format("HH");
 console.log(momentTime);
+
 var allTasks = [
   task9,
   task10,
@@ -75,7 +74,8 @@ var allTasks = [
 
 allTasks.forEach(function (task) {
   var taskID = parseInt(task[0].id);
-  console.log(taskID);
+
+  // if it's a current event
   if (taskID === momentTime) {
     task.css("background-color", "rgb(255, 70, 70)");
   }
