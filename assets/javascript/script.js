@@ -56,7 +56,7 @@ $(".5").val(savedTask5);
 // I can click on the existing task and erase it, I can write a new task on the same spot and save it afterwards.
 
 // Each block is colored respective of time (past, current, future event);
-var momentTime = moment().format("HH");
+var momentTime = parseInt(moment().format("HH"));
 
 var allTasks = [
   task9,
@@ -72,7 +72,8 @@ var allTasks = [
 
 allTasks.forEach(function (task) {
   var taskID = parseInt(task[0].id);
-
+  console.log(taskID);
+  console.log(momentTime);
   // if it's a current event
   if (taskID === momentTime) {
     task.css("background-color", "rgb(87, 199, 133)");
