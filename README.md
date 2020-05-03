@@ -1,4 +1,4 @@
-### Workday Planner
+# Workday Planner
 
 ## Link to the Planner
 https://lp5786766.github.io/workday-planner/
