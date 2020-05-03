@@ -55,10 +55,8 @@ $(".5").val(savedTask5);
 
 // I can click on the existing task and erase it, I can write a new task on the same spot and save it afterwards.
 
-// 3. Each block is colored respective of time (past, current, future event);
-
+// Each block is colored respective of time (past, current, future event);
 var momentTime = moment().format("HH");
-console.log(momentTime);
 
 var allTasks = [
   task9,
@@ -91,4 +89,3 @@ allTasks.forEach(function (task) {
 // Would the tasks be deleted the next day and you are presented with a blank day?
 // Mayby add button "Clear all Tasks"
 // Maybe add options to highlight events or timeblocks.
-//
