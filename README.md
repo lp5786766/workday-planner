@@ -22,5 +22,9 @@ For your convenience events are color-coded depending on the time of the workday
 - current - green
 - future - yellow
 - past - gray
+## Libraries Used:
+-[Bootstrap](https://getbootstrap.com/)
+-[Moment.js](https://momentjs.com/docs/)
+-[JQuery](http://code.jquery.com/)
 ## Credits:
 -[Luba Pecheneva](https://github.com/lp5786766)
